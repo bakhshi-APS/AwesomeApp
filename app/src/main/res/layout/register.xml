@@ -1,0 +1,98 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorPrimaryDark"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="Welcome"
+            android:textSize="30sp"
+            android:textColor="@color/colorAccent"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/usernameWrapper"
+            android:textColorHint="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:backgroundTint="@color/colorAccent"
+                android:textColor="@color/colorAccent"
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:hint="Username"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+
+            android:id="@+id/passwordWrapper"
+            android:backgroundTint="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:textColorHint="@color/colorAccent"
+            android:layout_height="wrap_content">
+        <EditText
+            android:textColorHighlight="@color/colorAccent"
+            android:backgroundTint="@color/colorAccent"
+            android:textColorHint="@color/colorAccent"
+            android:textColor="@color/colorAccent"
+            android:hint="Password"
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:backgroundTint="@color/colorAccent"
+            android:id="@+id/emailWrapper"
+            android:layout_width="match_parent"
+            android:textColorHint="@color/colorAccent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:backgroundTint="@color/colorAccent"
+                android:textColorHint="@color/colorAccent"
+                android:textColor="@color/colorAccent"
+                android:hint="Email"
+                android:id="@+id/email_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"/>
+        </android.support.design.widget.TextInputLayout>
+        <Button
+            android:background="@drawable/register_round"
+            android:textColorHint="@color/colorAccent"
+            android:textColor="@color/colorAccent"
+            android:id="@+id/register_button"
+            android:layout_marginTop="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="Register"
+            android:text="Register"/>
+
+    </LinearLayout>
+
+</LinearLayout>
